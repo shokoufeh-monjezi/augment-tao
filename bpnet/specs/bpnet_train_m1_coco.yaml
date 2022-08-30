@@ -2,7 +2,7 @@ __class_name__: BpNetTrainer
 checkpoint_dir: /home/jupyter/bpnet/models/exp_m1_unpruned
 log_every_n_secs: 30
 checkpoint_n_epoch: 5
-num_epoch: 20
+num_epoch: 5
 summary_every_n_steps: 20
 infrequent_summary_every_n_steps: 0
 validation_every_n_epoch: 5
