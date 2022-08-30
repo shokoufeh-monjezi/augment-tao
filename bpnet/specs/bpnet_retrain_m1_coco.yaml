@@ -1,5 +1,5 @@
 __class_name__: BpNetTrainer
-checkpoint_dir: /workspace/tao-experiments/bpnet/models/exp_m1_retrain
+checkpoint_dir: /home/jupyter/bpnet/models/exp_m1_retrain
 log_every_n_secs: 30
 checkpoint_n_epoch: 5
 num_epoch: 50
@@ -8,7 +8,7 @@ infrequent_summary_every_n_steps: 0
 validation_every_n_epoch: 5
 max_ckpt_to_keep: 100
 random_seed: 42
-pretrained_weights: /workspace/tao-experiments/bpnet/models/exp_m1_pruned/bpnet_model.pruned-0.2.tlt
+pretrained_weights: /home/jupyter/bpnet/models/exp_m1_pruned/bpnet_model.pruned-0.2.tlt
 load_graph: True
 finetuning_config:
   is_finetune_exp: False
@@ -21,7 +21,7 @@ dataloader:
   pose_config:
     __class_name__: BpNetPoseConfig
     target_shape: [32, 32]
-    pose_config_path: /workspace/examples/bpnet/model_pose_config/bpnet_18joints.json
+    pose_config_path: /home/jupyter/bpnet/model_pose_config/bpnet_18joints.json
   image_config:
     image_dims:
       height: 256
@@ -29,13 +29,13 @@ dataloader:
       channels: 3
     image_encoding: jpg
   dataset_config:
-    root_data_path: /workspace/tao-experiments/bpnet/data/
-    train_records_folder_path: /workspace/tao-experiments/bpnet/data
+    root_data_path: /home/jupyter/bpnet/data/
+    train_records_folder_path: /home/jupyter/bpnet/data
     train_records_path: [train-fold-000-of-001]
-    val_records_folder_path: /workspace/tao-experiments/bpnet/data
+    val_records_folder_path: /home/jupyter/bpnet/data
     val_records_path: [val-fold-000-of-001]
     dataset_specs:
-      coco: /workspace/examples/bpnet/data_pose_config/coco_spec.json
+      coco: /home/jupyter/bpnet/data_pose_config/coco_spec.json
   normalization_params: 
     image_scale: [256.0, 256.0, 256.0]
     image_offset: [0.5, 0.5, 0.5]
