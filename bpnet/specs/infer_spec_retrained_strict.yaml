@@ -1,6 +1,6 @@
-model_path: /workspace/tao-experiments/bpnet/models/exp1/model.step-1.tlt
-train_spec: /workspace/examples/bpnet/specs/bpnet_retrain_m1_coco.yaml
-input_shape: [288, 384]
+model_path: /home/jupyter/bpnet/models/exp1/model.step-1.tlt
+train_spec: /home/jupyter/bpnet/specs/bpnet_retrain_m1_coco.yaml
+input_shape: [368, 368]
 # choose from: {pad_image_input, adjust_network_input, None}
 keep_aspect_ratio_mode: pad_image_input
 output_stage_to_use: null
